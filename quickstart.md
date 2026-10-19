@@ -6,9 +6,9 @@ MCP endpoint: `https://mcp.recruitmcp.com/mcp`
 
 ## 1. Get your free API key
 
-Go to [recruitmcp.com/signup](https://recruitmcp.com/signup) (or click **Get your free API key** on [recruitmcp.com](https://recruitmcp.com)). Enter a workspace name and your email, then click **Create workspace**.
+Go to [recruitmcp.com/login](https://recruitmcp.com/login) (or click **Get your free API key** on [recruitmcp.com](https://recruitmcp.com)). Continue with GitHub, Google or email (you get a sign-in link by email). Your first sign-in creates your workspace and a Default key, with 1,250 free credits.
 
-The next screen shows your API key once, with a **Copy** button. Copy it now: it is not emailed. Your free credits are added after you confirm your email.
+You land on the app, where a **Your API key** popup shows the key once. Copy it right away: it is not emailed and not shown again.
 
 The same screen shows one first call. It is a search preview (`dry_run=true`), so it spends nothing:
 

@@ -6,7 +6,7 @@ using [`langchain-mcp-adapters`](https://github.com/langchain-ai/langchain-mcp-a
 
 ## 5-minute quickstart
 
-1. **Get a key.** Go to [recruitmcp.com/signup](https://recruitmcp.com/signup), enter a workspace name and email, and copy the key (it starts with `rmcp_live_` and is shown once). See [quickstart.md](quickstart.md) for Claude Desktop, Cursor and Claude Code.
+1. **Get a key.** Go to [recruitmcp.com/login](https://recruitmcp.com/login) and continue with GitHub, Google or email. Your first sign-in creates a workspace with 1,250 free credits and shows the key once in a **Your API key** popup (it starts with `rmcp_live_`); copy it right away. See [quickstart.md](quickstart.md) for Claude Desktop, Cursor and Claude Code.
 2. **Install** (Python 3.10+):
    ```bash
    python -m venv .venv && source .venv/bin/activate
