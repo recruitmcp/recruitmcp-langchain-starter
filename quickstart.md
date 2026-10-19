@@ -136,7 +136,7 @@ A dry run charges nothing. It returns an estimate (the maximum is the `limit`), 
 
 Run the same call without `dry_run`. Search costs 1 credit per returned profile, charged once per workspace (seeing the same profile again is free). The response shows what you paid in `cost.credits`.
 
-Results are profile stubs: name, title, company, location and profile id. To get the full profile, call `enrich_profiles` (2 credits per profile). Set `wait_seconds` to 25 or lower (25 is the maximum); if the job is still running, poll `get_people_job`.
+Results are profile stubs: name, title, company, location and profile id. To get the full profile, call `enrich_profiles` (2 credits per profile). Set `wait_seconds` to 25 or lower (25 is the maximum); if the job is still running, poll `get_people_job` until `status` is `completed` or `failed`. Stop on `failed` (it charges nothing) and on any error response.
 
 ## Good to know
 

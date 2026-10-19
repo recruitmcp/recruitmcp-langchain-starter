@@ -37,8 +37,9 @@ using [`langchain-mcp-adapters`](https://github.com/langchain-ai/langchain-mcp-a
 - **Approval:** above the key's approval threshold (500 credits on MCP when unset)
   a call returns `approval_required` with an estimate and a `confirm_token`, and
   charges nothing. Resend the same call with `confirm_token` to run it.
-- **Enrich jobs:** `enrich_profiles` waits at most `wait_seconds` (0–25). If the job
-  is still running, poll `get_people_job`.
+- **Enrich jobs:** `enrich_profiles` waits at most `wait_seconds` (0 to 25). If the job
+  is still running, poll `get_people_job` until `status` is `completed` or `failed`.
+  Stop on `failed` and on any error response.
 - **Filters:** never pass free text as a location or company; resolve it to ids first.
 
 ## License
